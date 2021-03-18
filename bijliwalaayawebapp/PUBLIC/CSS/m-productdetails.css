@@ -1,0 +1,62 @@
+.contact-info {
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+h2 {
+    font-size: 18px !important;
+}
+.grid-header-item {
+    padding: 10px 6px 6px 6px !important;
+    height: 100% !important;
+    width: 50% !important;
+}
+.product-rate-chart-outer-container {
+    width: 100%;
+}
+.product-rate-chart-container {
+    width: 100%;
+    padding: 2% 2%;
+}
+.details-container {
+    width: 100%;
+}
+.details-row {
+    width: 100%;
+}
+.detail-item{
+    width: 100%;
+    margin: 1% 0% 0.5%;
+    font-size: 6px;
+    font-weight: bold;
+}
+.rate {
+    width: 100%;
+}
+.item-names {
+    margin-left: 30px;
+}
+.item-name {
+    width: 60px;
+}
+.contact-info, .booking-heading {
+    font-size: 8px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 9px;
+}
+.inputtext {
+    height: 15px;
+    width: 100px;
+}
+.otpbtn {
+    left: -10px;
+    font-size: 5px;
+    font-weight: bold;
+}
+.bookbtn {
+    margin-top: 2%;
+    padding: 1% 1%;
+    font-size: 5px;
+    font-weight: bold;
+}
