@@ -1,0 +1,92 @@
+* {
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.grid-header-item {
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    align-items:center;
+    padding:20px 10px 10px;
+    overflow:hidden;
+    height: 100%;
+    width: 25%;
+    border-bottom: 1px solid grey;
+}
+.product-rate-chart-outer-container {
+    width: 100%;
+}
+.product-rate-chart-container {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 2% 2%;
+    border-bottom: 1px solid grey;
+}
+.details-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    width: 100%;
+}
+.details-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+.detail-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 2% 1% 1%;
+    font-weight: bold;
+}
+.rate {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.item-names {
+    margin-left: 150px;
+}
+.item-name {
+    width: 130px;
+}
+.contact-info, .booking-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 30px;
+}
+.inputtext {
+    position: relative;
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
+}
+.otpbtn {
+    display: inline;
+    position: relative;
+    left: -30px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+}
+.bookbtn {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 2%;
+    padding: 1% 1%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+}
