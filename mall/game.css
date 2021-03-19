@@ -1,0 +1,371 @@
+/*for everyone's default*/
+*{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+/*for outer frame*/
+html, body {
+  height: 100%;
+  width:360px;  
+}
+html {
+  zoom: 100%;
+}
+/*for page border*/
+#container { 
+  position: inherit;
+  padding: 0% 1%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 98%;
+  height: 100%;
+  overflow: visible;
+  background-color: black;
+}
+/*for wraper div*/
+.wraper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1%;
+  width: 100%;
+  background-color: white;
+}
+/*for page head*/
+.header {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3%;
+  width: 94%;
+  background-color: green;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18%;
+  border: 3px solid gold;
+  border-radius: 45%;
+}
+.heading {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 150%;
+  color: gold;
+  display: inline-block;
+  border-bottom: 2px solid gold;
+  font-weight: bold;
+}
+/*for wallet balance frame*/
+.balancetxt {
+  display: inline;
+  vertical-align: middle;
+  float: left;
+  padding: 1%;
+  width: 49%;
+  font-size: 17px;
+}
+.walletbtn {
+  z-index: 1;
+  border:none;
+  padding: 2% 3%;
+  margin: 2% 1%;
+  cursor: pointer;
+  display: inline;
+  vertical-align: middle;
+  border-radius: 60%;
+  float: right;
+  color: white;
+  background-color: rgb(221, 15, 49);
+}
+/*for gametype heading*/
+#gametype {
+  font-size: 110%;
+}
+/*for period countdown frame*/
+.period {
+  display:inline;
+  float: left;
+  padding: 1% 0%;
+  padding-left: 2%;
+  width: 48%;
+  font-size: 105%;
+  text-align: left;
+  background-color: white;
+  color: grey;
+}
+.timer {
+  display: inline;
+  float: right;
+  padding: 1% 0%;
+  padding-right: 2%;
+  width: 48%;
+  font-size: 105%;
+  text-align: right;
+  background-color: white;
+  color: grey;
+}
+/*for button customisation : - */
+/* for button colors */
+.green {
+  background-color: #28c04c;
+}
+.violet {
+  background-color: purple;
+}
+.red {
+  background-color: red;
+}
+.greenviolet {
+  background-image: linear-gradient(to top, #28c04c , purple);
+}
+.redviolet {
+  background-image: linear-gradient(to bottom, red , purple);
+}
+/*for button display*/
+.colorbtn {
+  display: inline;
+  z-index: 1;
+  border:none;
+  border-radius: 13px;
+  padding: 2% 4%;
+  margin: 2% 1%;
+  width: 28%;
+  font-weight: bold;
+  cursor: pointer;
+  color:white;
+}
+.numberbtn {
+  display: inline-block;
+  z-index: 1;
+  border:none;
+  color:white;
+  padding: 4.8% 6%;
+  margin: 1% 2%;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+/*for previous result display*/
+#prwrap{
+  padding: 3%;
+  width: 94%;
+  background-color: green;
+}
+#pr {
+  float: left;
+  font-size: 110%;
+  text-align: left;
+}
+.link {
+  display: inline;
+  float: right;
+  padding: 1%;
+  text-align: right;
+  color: purple;
+}
+#prtable{
+  margin-top: 0.3%;
+  padding: 0% 2%;
+  width: 96%;
+  background-color: white;
+}
+#prtablehead{
+  padding: 0% 0%;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  background-color: white;
+}
+.tableheading {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1% 0%;
+  font-size: 120%;
+  font-weight: bold;
+  width: 24%;
+  color: black;
+  background-color: white;
+}
+.tablecontent {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.feedrow {
+  display: none;
+  vertical-align: middle;
+  padding-top: 1%;
+  border-bottom: 1.5px solid grey;
+  width: 100%;
+}
+.feedcontent {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1% 0%;
+  border: none;
+  font-size: 94%;
+  width: 24%;
+  height: 100%;
+  background-color: white;
+}
+#rnumber {
+  font-weight: bold;
+}
+.boxa {
+  display: inline-block;
+  z-index: 1;
+  border: none;
+  width: 13px;
+  height: 13px;
+  background-color: green;
+  border-radius: 50%;
+}
+.boxb {
+  display: inline-block;
+  z-index: 1;
+  border: none;
+  width: 13px;
+  height: 13px;
+  background-color: purple;
+  border-radius: 50%;
+}
+/*for popup display*/
+.popup{
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0%;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+.popupcontent{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 2%;
+  padding: 1%;
+  width: 80%;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.popuphead{
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding: 2%;
+  width: 96%;
+  font-weight: bold;
+  background-color: white;
+}
+.popupbody{
+  display: inline-block;
+  padding: 2%;
+  width: 96%;
+  font-weight:bold;
+  background-color: white;
+}
+.popupfoot{
+  display: inline-block; 
+  border-top:2px solid black;
+  padding: 2%;
+  width: 96%;
+  font-weight:bold;
+  background-color: rgba(255,255,255,0.5);
+}
+.popupfootbtn{
+  display: inline;
+  background-color: grey;
+  opacity: 1;
+  padding: 2%;
+  width: 46%;
+  cursor: pointer;
+  color: white;
+}
+#colorhead {
+  display: block;
+  position: relative;
+  width: fit-content;
+  padding: 3%;
+  background-color: white;
+  color: white;
+  font-size: 137%;
+  font-weight: bold;
+}
+#selectmoneycancel {
+  display: inline;
+  float: left;
+  background-color:grey;
+  opacity:1;
+  color:white;
+}
+#selectmoneyconfirm {
+  display: inline;
+  float: right;
+  background-color:grey;
+  opacity:1;
+  color:white;
+}
+.presale{
+  display: block;
+  margin:auto;
+  padding:5px;
+  font-size:12px;
+  font-weight:bold;
+  text-align:center;
+  height:100%;
+}
+.moneybutton {
+  display: inline-block;
+  z-index: 1;
+  padding: 2%;
+  width: 22%;
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+  cursor: pointer;
+  background-color:black;
+  opacity:0.4;
+}
+.multiplebutton{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  cursor: pointer;
+  background-color:black;
+  opacity:0.4;
+}
+.multiplebutton:hover {
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  cursor:pointer;
+  background-color:black;
+  opacity:1;
+}
+.inputtext{
+  border-radius:15px;
+  width:60px;
+  height:16px;
+  padding:6px 0px;
+  font-size:16px;
+  text-align:center;
+  background-color:grey;
+  opacity:1;
+  color:white;
+}
+#totalbetamount {
+  font-size: 100%;
+  font-weight: bold;
+}

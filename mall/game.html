@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1">
+    <title>Document</title>
+    <style st></style>
+    <link rel="stylesheet" href="game.css">
+</head>
+<script src="gamescript.js" type="text/javascript"></script>
+<body>
+    <div id="container">
+        <div id="headdiv" class="wraper">
+            <div id="pagehead" class="header">
+                <img class="logo" src="icon1.png" alt="logo"></img>
+                <h1 class="heading">Welcome to Golds-Mall</h1>
+            </div>
+        </div>
+        <div id="wallet" class="wraper">
+            <span class="balancetxt">Available Balance :<br><span class="balance">999999999.00</span></span>
+            <button class="walletbtn">Recharge</button>
+            <button class="walletbtn">Withdraw</button>
+        </div>
+        <div id="gametypewrap" class="wraper">
+            <div id="gametype" class="header">
+                <div id="parity" class="heading">
+                    Parity
+                </div>
+            </div>
+        </div>
+        <div id="periodtimewrap" class="wraper">
+            <div class="period">
+                Period<br>
+                <div id="period" class="period"></div>
+            </div>
+            <div class="timer">
+                Count Down<br>
+                <div id="timer"class="timer"></div>
+            </div>
+        </div>
+         <!--popup for period end-->
+        <div id="periodendpopup" class="popup">
+            <div id="periodendmsg" class="popupcontent">
+                <div id="periodendmsghead" class="popuphead">
+                    NOTICE
+                </div>
+                <br>
+                <div id="periodendmessage" class="popupbody">
+                    The current period is over.
+                    Next period is : <span id="periodnum"></span>
+                </div>
+                <br>
+                <div id="periodendmsgfoot" class="popupfoot">
+                    <div class="close">OK</div>
+                </div>
+            </div>
+        </div>
+        <div id="gamebtnwrap" class="wraper">
+            <button id="green" class="colorbtn gamebtn green" onclick="join()">Join Green</button>&nbsp
+            <button id="violet" class="colorbtn gamebtn violet" onclick="join()">Join Violet</button>&nbsp
+            <button id="red" class="colorbtn gamebtn red" onclick="join()">Join Red</button>
+            <br>
+            <button id="btn0" class="numberbtn gamebtn redviolet">0</button>
+            <button id="btn2" class="numberbtn gamebtn red">2</button>
+            <button id="btn4" class="numberbtn gamebtn red">4</button>
+            <button id="btn6" class="numberbtn gamebtn red">6</button>
+            <button id="btn8" class="numberbtn gamebtn red">8</button>
+            <br>
+            <button id="btn5" class="numberbtn gamebtn greenviolet">5</button>
+            <button id="btn1" class="numberbtn gamebtn green">1</button>
+            <button id="btn3" class="numberbtn gamebtn green">3</button>
+            <button id="btn7" class="numberbtn gamebtn green">7</button>
+            <button id="btn9" class="numberbtn gamebtn green">9</button>
+        </div>
+        <div id="betpopup" class="popup">
+            <div id="selectbetmoney" class="popupcontent">
+                <div id="selectmoneyhead" class="popuphead">
+                    <div id="colorhead" class="shadow">
+                        <span id="selectcolorhead"></span>
+                    </div>
+                </div>
+                <div id="selectmoneybody" class="popupbody">
+                    <span>Select Token Money :</span>
+                    <br>
+                    <div id="10" class="moneybutton">10</div>
+                    <div id="50" class="moneybutton">50</div>
+                    <div id="100" class="moneybutton">100</div>
+                    <div id="500" class="moneybutton">500</div>
+                    <div id="1000" class="moneybutton">1000</div>
+                    <div id="10000" class="moneybutton">10000</div>
+                    <br>
+                    <span> Select Token Multiple :</span>
+                    <br>
+                    <button id="minus" class="multiplebutton">-</button>
+                    <input type="text" id="multipletext" class="inputtext">
+                    <button id="plus" class="multiplebutton">+</button>
+                    <br>
+                    <span id="totalbetamount"></span>
+                    <div id="presale" class="presale">
+                        <input type="checkbox" id="presalerule" class="presalerule">
+                        <span id="presaleruletext">I agree the <a href=""></a> Pre-sale Rule</a></span><br>
+                    </div>
+                </div>
+                <div id="selectmoneyfoot" class="popupfoot">
+                    <div id="selectmoneycancel" class="popupfootbtn">
+                        Cancel
+                    </div>
+                    <div id="selectmoneyconfirm" class="popupfootbtn">
+                        Confirm
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div id="prwrap" class="wraper">-->
+            <div id="prwrap" class="wraper">
+                <div id="pr" class="heading">Parity Record</div>
+                <a id="morerecords" class="link" href="">More &gt;&gt;&gt;</a>
+            </div>
+            <div id="prtable" class="wraper">
+                <div id="prtablehead" class="header">
+                    <div id="rperiodhead" class="tableheading">Period</div>
+                    <div id="rpricehead" class="tableheading">Price</div>
+                    <div id="rnumberhead" class="tableheading">Number</div>
+                    <div id="rcolorhead" class="tableheading">Result</div>
+                </div>
+                <div id="prtablecontent" class ="tablecontent">
+                    <div id="feedrow" class="feedrow">
+                        <div id="rperiod" class="feedcontent"></div>
+                        <div id="rprice" class="feedcontent"></div>
+                        <div id="rnumber" class="feedcontent"></div>
+                        <div id="rcolor" class="feedcontent">
+                            <div id ="boxa" class = "boxa"></div>
+                            <div id = "boxb" class = "boxb"></div>
+                        </div>
+                    </div>
+                    <div id="feedrow_placeholder" class="feedrow_placeholder">
+                    </div>
+                </div>    
+            </div>
+        <!--</div>--> 
+    </div>
+</body>
+</html>
